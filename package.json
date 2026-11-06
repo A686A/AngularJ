@@ -6,7 +6,9 @@
     "start": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "mock:api": "node tools/mock-api/server.mjs",
+    "test:integration": "node tools/testing/run-integration.mjs"
   },
   "private": true,
   "packageManager": "npm@11.9.0",
